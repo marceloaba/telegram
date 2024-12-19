@@ -4,6 +4,7 @@ services:
     container_name: telegram
     image: marceloaba/telegram:v1.0
     pull_policy: always
+    restart: unless-stopped
     ports:
       - "5001:5001"
     environment:
