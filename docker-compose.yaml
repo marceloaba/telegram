@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  telegram:
+    container_name: telegram
+    image: marceloaba/telegram:v1.0
+    pull_policy: always
+    ports:
+      - "5001:5001"
+    environment:
+      TZ: "America/Toronto"
+      TELEGRAM_TOKEN: "${TELEGRAM_TOKEN}"
+      TELEGRAM_CHAT_ID: "${TELEGRAM_CHAT_ID}"
