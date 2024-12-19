@@ -8,5 +8,6 @@ services:
       - "5001:5001"
     environment:
       TZ: "America/Toronto"
+      FLASK_PORT: "5001"
       TELEGRAM_TOKEN: "${TELEGRAM_TOKEN}"
       TELEGRAM_CHAT_ID: "${TELEGRAM_CHAT_ID}"

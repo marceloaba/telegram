@@ -11,8 +11,5 @@ RUN pip3 install --upgrade pip \
 # Copy the current directory contents into the container at /app
 COPY app/main.py /app/
 
-# Make port 5001 available to the world outside this container
-EXPOSE 5001
-
 # Run the application
 CMD ["python", "main.py"]
